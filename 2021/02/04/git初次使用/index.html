@@ -23,22 +23,21 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"w2hp.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null,"activeClass":"disqus"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="sql注入最基本的小结">
+<meta name="description" content="第一次使用git记录">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SQL注入学习小结">
-<meta property="og:url" content="https://w2hp.github.io/2017/10/13/SQL%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%93/index.html">
+<meta property="og:title" content="git初次使用">
+<meta property="og:url" content="https://w2hp.github.io/2021/02/04/git%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="w2hp">
-<meta property="og:description" content="sql注入最基本的小结">
+<meta property="og:description" content="第一次使用git记录">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2017-10-13T05:33:44.000Z">
-<meta property="article:modified_time" content="2021-02-02T18:38:43.002Z">
+<meta property="article:published_time" content="2021-02-04T12:13:14.000Z">
+<meta property="article:modified_time" content="2021-02-04T13:47:00.949Z">
 <meta property="article:author" content="w2hp">
-<meta property="article:tag" content="sql">
-<meta property="article:tag" content="web安全">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://w2hp.github.io/2017/10/13/SQL%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%93/">
+<link rel="canonical" href="https://w2hp.github.io/2021/02/04/git%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8/">
 
 
 <script class="page-configurations">
@@ -50,7 +49,7 @@
     lang   : 'en'
   };
 </script>
-<title>SQL注入学习小结 | w2hp</title>
+<title>git初次使用 | w2hp</title>
   
 
 
@@ -188,7 +187,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2"><span class="nav-number">2.</span> <span class="nav-text">2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4"><span class="nav-number">3.</span> <span class="nav-text">4</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5"><span class="nav-number">4.</span> <span class="nav-text">5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6"><span class="nav-number">5.</span> <span class="nav-text">6</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7"><span class="nav-number">6.</span> <span class="nav-text">7</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BAgithub-repository"><span class="nav-number">1.</span> <span class="nav-text">创建github repository</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%91%E5%B0%9D%E8%AF%95%E7%9A%84%E5%88%9D%E6%AC%A1%E6%8F%90%E4%BA%A4%E6%B5%81%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">我尝试的初次提交流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8E%E7%BB%AD%E5%B0%9D%E8%AF%95%E7%9A%84%E4%BF%AE%E6%94%B9%E5%92%8C%E6%8F%90%E4%BA%A4%E6%B5%81%E7%A8%8B"><span class="nav-number">3.</span> <span class="nav-text">后续尝试的修改和提交流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -259,7 +258,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://w2hp.github.io/2017/10/13/SQL%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%93/">
+    <link itemprop="mainEntityOfPage" href="https://w2hp.github.io/2021/02/04/git%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -272,7 +271,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          SQL注入学习小结
+          git初次使用
         </h1>
 
         <div class="post-meta-container">
@@ -282,23 +281,17 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2017-10-13 13:33:44" itemprop="dateCreated datePublished" datetime="2017-10-13T13:33:44+08:00">2017-10-13</time>
+      <time title="Created: 2021-02-04 20:13:14 / Modified: 21:47:00" itemprop="dateCreated datePublished" datetime="2021-02-04T20:13:14+08:00">2021-02-04</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-02-03 02:38:43" itemprop="dateModified" datetime="2021-02-03T02:38:43+08:00">2021-02-03</time>
-      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/sql%E6%B3%A8%E5%85%A5/" itemprop="url" rel="index"><span itemprop="name">sql注入</span></a>
+          <a href="/categories/git%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index"><span itemprop="name">git使用</span></a>
         </span>
     </span>
 
@@ -311,15 +304,15 @@
       </span>
       <span class="post-meta-item-text">Disqus: </span>
     
-    <a title="disqus" href="/2017/10/13/SQL%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%93/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/10/13/SQL注入学习小结/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2021/02/04/git%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/02/04/git初次使用/" itemprop="commentCount"></span>
     </a>
   </span>
   
   
 </div>
 
-            <div class="post-description">sql注入最基本的小结</div>
+            <div class="post-description">第一次使用git记录</div>
         </div>
       </header>
 
@@ -327,7 +320,36 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><h2 id="4"><a href="#4" class="headerlink" title="4"></a>4</h2><h2 id="5"><a href="#5" class="headerlink" title="5"></a>5</h2><h2 id="6"><a href="#6" class="headerlink" title="6"></a>6</h2><h2 id="7"><a href="#7" class="headerlink" title="7"></a>7</h2>
+        <p>第一次使用git，并将自己的代码提交到git</p>
+<h2 id="创建github-repository"><a href="#创建github-repository" class="headerlink" title="创建github repository"></a>创建github repository</h2><p>此步骤同创建博客，当然命名可以随意<br>创建成功后复制仓库地址。（以ssh形式复制）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git@github.com:name&#x2F;test.git</span><br></pre></td></tr></table></figure>
+<p>官方的git操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">create a new repository on the <span class="built_in">command</span> line</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;# test&quot;</span> &gt;&gt; README.md</span><br><span class="line">    git init</span><br><span class="line">    git add README.md</span><br><span class="line">    git commit -m <span class="string">&quot;first commit&quot;</span></span><br><span class="line">    git branch -M main</span><br><span class="line">    git remote add origin git@github.com:name/test.git</span><br><span class="line">    git push -u origin main</span><br><span class="line">push an existing repository from the <span class="built_in">command</span> line</span><br><span class="line">    git remote add origin git@github.com:name/test.git</span><br><span class="line">    git branch -M main</span><br><span class="line">    git push -u origin main</span><br></pre></td></tr></table></figure>
+<h2 id="我尝试的初次提交流程"><a href="#我尝试的初次提交流程" class="headerlink" title="我尝试的初次提交流程"></a>我尝试的初次提交流程</h2><p>首先进入本地要提交的项目文件位置<br>初始化</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+<p>添加一个<code>README.md</code>文件，此处也可以是其他文件，也可以用.指定当前目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add README.md</span><br></pre></td></tr></table></figure>
+<p>提交暂存区到本地仓库，并附带一条说明（如<code>version 0.1</code>）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
+<p>查到-M是强制重命名，但是用在此处不是很明白</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -M main</span><br></pre></td></tr></table></figure>
+<p>添加远程版本库，<code>origin</code>为本地版本库，后面跟复制的仓库地址，由于复制的是ssh形式，ssh已经在创建blog时配置了，所以后续push无需密码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:name/test.git</span><br></pre></td></tr></table></figure>
+<p>将本地origin提交到github</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin main</span><br></pre></td></tr></table></figure>
+<h2 id="后续尝试的修改和提交流程"><a href="#后续尝试的修改和提交流程" class="headerlink" title="后续尝试的修改和提交流程"></a>后续尝试的修改和提交流程</h2><p>增加新文件后，需要把改文件提交到暂存区</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add filename</span><br></pre></td></tr></table></figure>
+<p>再次提交暂存区到本地仓库，并附带一条说明（如<code>version 0.2</code>）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure>
+<p>将暂存区的内容提交到GitHub</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push</span><br></pre></td></tr></table></figure>
+<p>删除远程仓库<code>origin</code>，并换成一个新的仓库地址<code>git@github.com:name/new.git</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git remote remove origin</span><br><span class="line">$ git remote add origin git@github.com:name/new.git</span><br><span class="line">$ git push -u origin main</span><br></pre></td></tr></table></figure>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>就是一个简单的尝试，最基本的操作，后续还需学习其他的命令和操作</p>
+<blockquote>
+<p>参考资料：<br>Git 基本操作：<a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-basic-operations.html">https://www.runoob.com/git/git-basic-operations.html</a>  </p>
+</blockquote>
+
     </div>
 
     
@@ -336,22 +358,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/sql/" rel="tag"># sql</a>
-              <a href="/tags/web%E5%AE%89%E5%85%A8/" rel="tag"># web安全</a>
+              <a href="/tags/git/" rel="tag"># git</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2017/08/03/hello-world/" rel="prev" title="Hello World | hexo+next主题搭建个人博客">
-                  <i class="fa fa-chevron-left"></i> Hello World | hexo+next主题搭建个人博客
+                <a href="/2017/10/13/SQL%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%93/" rel="prev" title="SQL注入学习小结">
+                  <i class="fa fa-chevron-left"></i> SQL注入学习小结
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/02/04/git%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8/" rel="next" title="git初次使用">
-                  git初次使用 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -441,9 +459,9 @@
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "https://w2hp.github.io/2017/10/13/SQL%E6%B3%A8%E5%85%A5%E5%AD%A6%E4%B9%A0%E5%B0%8F%E7%BB%93/";
-    this.page.identifier = "2017/10/13/SQL注入学习小结/";
-    this.page.title = "SQL注入学习小结";
+    this.page.url = "https://w2hp.github.io/2021/02/04/git%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8/";
+    this.page.identifier = "2021/02/04/git初次使用/";
+    this.page.title = "git初次使用";
     };
   NexT.utils.loadComments('#disqus_thread', () => {
     if (window.DISQUS) {
