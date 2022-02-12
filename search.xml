@@ -191,4 +191,33 @@
         <tag>git</tag>
       </tags>
   </entry>
+  <entry>
+    <title>VSCodex插件安装记录</title>
+    <url>/2022/02/13/VSCodex%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<p>最近开始学习Go，于是搞了一个vscode，然后沉迷扩展和插件安装，故记录自己已安装的插件</p>
+<hr>
+<h2 id="一个vscode的默认设置：彩虹括号对"><a href="#一个vscode的默认设置：彩虹括号对" class="headerlink" title="一个vscode的默认设置：彩虹括号对"></a>一个vscode的默认设置：彩虹括号对</h2><p>这个是一个vscode的默认设置，一开始是在找对应的插件的，然后在插件中发现vscode已经默认支持了，故修改默认配置即可实现。<br>在配置文件<code>setting.json</code>中增加以下内容即可</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;editor.bracketPairColorization.enabled&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">&quot;editor.guides.bracketPairs&quot;</span>:<span class="string">&quot;active&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Chinese-Simplified-简体中文-Language-Pack-for-Visual-Studio-Code"><a href="#Chinese-Simplified-简体中文-Language-Pack-for-Visual-Studio-Code" class="headerlink" title="Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code"></a>Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code</h2><p>vscode的中文插件，通过使用<code>Configure Display Language</code>命令显式设置 VS Code 显示语言，可以替代默认 UI 语言。 按下<code>Ctrl+Shift+P</code>组合键以显示<code>命令面板</code>，然后键入<code>display</code>以筛选并显示<code>Configure Display Language</code>命令。按<code>Enter</code>，然后会按区域设置显示安装的语言列表，并突出显示当前语言设置。选择另一个<code>语言</code>以切换 UI 语言。 请参阅文档并获取更多信息。</p>
+<hr>
+<h2 id="Auto-Complete-Tag"><a href="#Auto-Complete-Tag" class="headerlink" title="Auto Complete Tag"></a>Auto Complete Tag</h2><p>这个插件包含<code>Auto Close Tag</code>和<code>Auto Rename Tag</code>两个插件，该插件可以在创建<code>HTML</code>的标签时自动闭合标签，在修改标签时同步修改闭合的标签。</p>
+<hr>
+<h2 id="GitHub-Copilot"><a href="#GitHub-Copilot" class="headerlink" title="GitHub Copilot"></a>GitHub Copilot</h2><p><code>GitHub</code>的AI自动补全插件，比常规的补全插件更强的联想能力。但是这个插件据说口碑不太好，要不要安装需自行斟酌。</p>
+<hr>
+<h2 id="HTML-CSS-Support"><a href="#HTML-CSS-Support" class="headerlink" title="HTML CSS Support"></a>HTML CSS Support</h2><p>智能提示CSS类名以及id </p>
+<hr>
+<h2 id="HTML-Snippets"><a href="#HTML-Snippets" class="headerlink" title="HTML Snippets"></a>HTML Snippets</h2><p>智能提示HTML标签，以及标签含义</p>
+<hr>
+<h2 id="Markdown-Preview-Github-Styling"><a href="#Markdown-Preview-Github-Styling" class="headerlink" title="Markdown Preview Github Styling"></a>Markdown Preview Github Styling</h2><p><code>markdown</code>的<code>GitHub</code>风格预览，写<code>README</code>的时候可以预览格式，不过推荐用安装量更高的<code>Markdown All in One</code></p>
+<hr>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>我还以为自己装了很多插件，整理起来发现其实也没多少，如果有其它优秀的插件，欢迎大佬推荐。</p>
+]]></content>
+      <categories>
+        <category>写代码</category>
+      </categories>
+      <tags>
+        <tag>vscode</tag>
+      </tags>
+  </entry>
 </search>
